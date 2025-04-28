@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 // Category -> Type of entity
-//Long -> Type of primary key
+//Long -> Type of primary key (In Category id has a Long type)
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
 }
