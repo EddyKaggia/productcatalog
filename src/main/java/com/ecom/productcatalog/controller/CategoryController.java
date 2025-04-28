@@ -14,6 +14,6 @@ public class CategoryController {
     private CategoryService categoryService;
 
     public List<Category> getAllCategories() {
-        categoryService.getAllCategories();
+        return categoryService.getAllCategories();
     }
 }
