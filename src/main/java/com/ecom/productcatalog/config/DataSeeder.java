@@ -66,7 +66,7 @@ public class DataSeeder implements CommandLineRunner {
         blender.setPrice(59.99);
         blender.setCategory(home);
 
-        productRepository.saveAll(Arrays.asList(phone, laptop, jacket));
+        productRepository.saveAll(Arrays.asList(phone, laptop, jacket, blender));
     }
 
 }
