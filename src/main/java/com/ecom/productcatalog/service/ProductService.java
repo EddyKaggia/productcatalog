@@ -15,7 +15,6 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
-    @GetMapping
     public List<Product> getAllProducts() {
         return productRepository.findAll();
     }
