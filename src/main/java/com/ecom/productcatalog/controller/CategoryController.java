@@ -1,6 +1,7 @@
 package com.ecom.productcatalog.controller;
 
 import com.ecom.productcatalog.model.Category;
+import com.ecom.productcatalog.service.CategoryService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,6 +11,9 @@ import java.util.List;
 @RequestMapping("/api/categories")
 public class CategoryController {
 
+    private CategoryService categoryService;
+
     public List<Category> getAllCategories() {
+        categoryService.getAllCategories();
     }
 }
