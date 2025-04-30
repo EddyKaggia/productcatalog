@@ -16,7 +16,11 @@ const Catalog = () => {
     };
   }, []);
 
-  return <div></div>;
+  return (
+    <div className="='container">
+      <div>{products.length ? <p></p> : <p>No Products Found!</p>}</div>
+    </div>
+  );
 };
 
 export default Catalog;
