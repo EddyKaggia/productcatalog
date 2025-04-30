@@ -17,6 +17,6 @@ public class Category {
     @OneToMany(mappedBy = "category",
                cascade = CascadeType.ALL,
                fetch = FetchType.LAZY)
-    @JsonIgnore
+    @JsonIgnore // tells Jackson (Spring Boot’s JSON serializer) to skip the products field during serialization
     private Set<Product> products;
 }
