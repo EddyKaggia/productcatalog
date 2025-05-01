@@ -9,12 +9,13 @@ import "./App.css";
 import Catalog from "./components/Catalog";
 
 function App() {
-  return;
-  <Router>
-    <Routes>
-      <Route path="/catalog" element={<Catalog />} />
-    </Routes>
-  </Router>;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/catalog" element={<Catalog />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

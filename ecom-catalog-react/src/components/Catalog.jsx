@@ -10,6 +10,7 @@ const Catalog = () => {
         const response = await fetch(`http://localhost:8080/api/products`);
 
         const data = response.json();
+        console.log("Here is the data: ", data);
         setProducts(data);
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -20,7 +21,11 @@ const Catalog = () => {
   return (
     <div className="='container">
       <div>
-        {products.length ? <div>{ProductList}</div> : <p>No Products Found!</p>}
+        {products.length ? (
+          <ProductList products={products} />
+        ) : (
+          <p>No Products Found!</p>
+        )}
       </div>
     </div>
   );
