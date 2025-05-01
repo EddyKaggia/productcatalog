@@ -21,6 +21,7 @@ const Catalog = () => {
 
   return (
     <div className="='container">
+      <h1>ALTAZON</h1>
       <div>
         {products.length ? (
           <ProductList products={products} />
