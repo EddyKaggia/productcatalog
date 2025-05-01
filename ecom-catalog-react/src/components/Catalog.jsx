@@ -5,17 +5,18 @@ const Catalog = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    async () => {
+    const fetchProducts = async () => {
       try {
         const response = await fetch(`http://localhost:8080/api/products`);
-
-        const data = response.json();
+        const data = await response.json();
         console.log("Here is the data: ", data);
         setProducts(data);
       } catch (error) {
         console.error("Error fetching products:", error);
       }
     };
+
+    fetchProducts();
   }, []);
 
   return (
