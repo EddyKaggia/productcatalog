@@ -10,11 +10,11 @@ const ProductList = ({ products }) => {
               alt={product.name}
             />
             <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">Some quick example text to build</p>
-              <a href="#" class="btn btn-primary">
-                Go Somewhere
-              </a>
+              <h5 class="card-title">{product.name}</h5>
+              <p class="card-text">{product.description}</p>
+              <p class="card-text">
+                <strong>${product.price}</strong>
+              </p>
             </div>
           </div>
         </div>
